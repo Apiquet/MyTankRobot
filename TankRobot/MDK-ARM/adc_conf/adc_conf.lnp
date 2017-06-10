@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"adc_conf\system_stm32f4xx.o"
+"adc_conf\main.o"
+"adc_conf\stm32f4xx_it.o"
+"adc_conf\stm32f4xx_hal_msp.o"
+"adc_conf\stm32f4xx_hal.o"
+"adc_conf\stm32f4xx_hal_adc.o"
+"adc_conf\stm32f4xx_hal_pwr_ex.o"
+"adc_conf\stm32f4xx_hal_flash.o"
+"adc_conf\stm32f4xx_hal_gpio.o"
+"adc_conf\stm32f4xx_hal_cortex.o"
+"adc_conf\stm32f4xx_hal_flash_ramfunc.o"
+"adc_conf\stm32f4xx_hal_tim.o"
+"adc_conf\stm32f4xx_hal_pwr.o"
+"adc_conf\stm32f4xx_hal_rcc_ex.o"
+"adc_conf\stm32f4xx_hal_dma.o"
+"adc_conf\stm32f4xx_hal_adc_ex.o"
+"adc_conf\stm32f4xx_hal_dma_ex.o"
+"adc_conf\stm32f4xx_hal_tim_ex.o"
+"adc_conf\stm32f4xx_hal_flash_ex.o"
+"adc_conf\stm32f4xx_hal_rcc.o"
+"adc_conf\startup_stm32f401xc.o"
+--library_type=microlib --strict --scatter "adc_conf\adc_conf.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "adc_conf.map" -o adc_conf\adc_conf.axf
